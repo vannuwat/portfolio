@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+*{
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background: transparent;
+  padding: 3% 9% 0 9%;
+}
+.logo{
   color: white;
+  font-size: 2rem;
+  font-weight: 600;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-bar{
+  display:flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-bar a{
+  margin: 1rem 2rem 0 2rem;
+  color: white;
+  border-bottom: 0.2rem solid transparent;
+  transition: all .55s ease;
+}
+.nav-bar a:hover{
+  border-bottom: 0.2rem solid white;
+}
+body{
+  background-color: red;
+}
+#menu-icon{
+  color: white;
+  font-size: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+.hero{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to left, rgb(49, 197, 81), rgb(17, 56, 19));
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2rem;
+}
+section{
+  padding: 15% 10% 0% 15%;
+}
+.hero-text{
+  min-width: 25rem;
+  height: auto;
+}
+.hero-text h5{
+  color: white;
+  line-height: 1.9;
+  font-weight: 400;
+}
+.hero-text h4{
+  color: white;
+  font-weight: 600;
+}
+.hero-text h1{
+  color: white;
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive;
+  margin: 1rem 0 1rem 0;
+}
+.hero-text p{
+  color: white;
+  line-height: 1.9;
+}
+.hero-text a{
+  color: white;
+  display: inline-block;
+  background:rgb(50, 151, 72);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+  font-size: 14px;
+  padding: 12px 30px;
+  line-height: 1.4;
+  margin: 1rem 0.3rem;
+}
+.hero-text a:hover{
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+.hero-text a.ctaa{
+  background: transparent;
+  border: 1px solid white;
+}
+.hero-text a.ctaa i{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.hero-img img{
+  width: 35rem;
+  height: auto;
+}
+.icons{
+  position: absolute;
+  top: 50%;
+  padding:0% 5%;
+  transform: translateY(-50%);
+}
+.icons i{
+  display: block;
+  color: white;
+  margin: 1rem;
+  font-size: 24px;
+  transition: all 0.55s ease;
+}
+.icons i:hover{
+  color: rgb(157, 155, 154);
+  transform: translateY(-5px);
+}
+.scroll-down{
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+.scroll-down i{
+  color:white;
+  display: block;
+  font-size: 1rem;
+  background: #4d9559;
+  border-radius: 30px;
+  padding: 12px;
+  transition: all .55s ease;
+}
+.scroll-down i:hover{
+  transform: translateY(-5px);
+}
+@media (max-width: 1300px){
+  header{
+    padding: 5% 3%;
+    transition: .2s;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-bar a{
+    margin: 1rem 1rem 0 1rem;
+  }
+  .hero-img img{
+    width: 30rem;
+    height: auto;
+    transition: .2s;
+  }
+}
+@media (max-width: 1135px){
+  .hero{
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-content: center;
+  }
+  .hero-img img{
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 890px){
+  #menu-icon{
+    display: block;
+  }
+  header{
+    position: fixed;
+  }
+  .nav-bar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all .55s ease;
+  }
+  .nav-bar.open{
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+  }
+  .nav-bar a{
+    display: block;
+  }
+  .nav-bar.open{
+    right: 0;
+  }
+}
+@media (max-width: 700px){
+  .icons{
+    display: none;
+  }
+  .scroll-down{ 
+    display: none;
+  }
+}
+@media (max-width: 500px){
+  .hero-text{
+    text-align: center;
+    min-width: 20rem;
+  }
+  .hero-text h1{
+    font-size: 2.5rem;
+  }
+  .hero-img img{
+    width: 20rem;
+    height: auto;
+    transition: .2s;
+  }
+  .logo{
+    font-size: 1.5rem;
+  }
+  .hero-text a{
+    font-size: 10px
   }
 }
