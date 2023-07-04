@@ -338,12 +338,13 @@ header{
   .hero-img img{
     width: 30rem;
     height: auto;
-    transition: .2s;
   }
   .hero-img-anime img{
     width: 30rem;
     height: auto;
-    transition: .2s;
+  }
+  .others-web{
+    min-height: 60vh;
   }
 }
 @media (max-width: 1135px){
@@ -379,17 +380,14 @@ header{
   .hero-img img{
     width: 20rem;
     height: auto;
-    transition: .2s;
   }
   .hero-img-anime img{
     width: 20rem;
     height: auto;
-    transition: .2s;
   }
   .image-container img{
     width: 20rem;
     height: auto;
-    transition: .2s;
   }
   .logo{
     font-size: 1.5rem;
@@ -399,6 +397,9 @@ header{
   }
   .hero-text p{
     font-size: 0.8rem;
+  }
+  .others-web{
+    min-height: 40vh;
   }
   .grid-item {
     background-color: #ccc;
