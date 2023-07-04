@@ -367,11 +367,9 @@ header{
     height: 100%;
     place-content: center;
   }
-}
-@media (max-width: 700px){
-  /* .icons{
-    display: none;
-  } */
+  .others-web{
+    min-height: 60vh;
+  }
 }
 @media (max-width: 500px){
   .hero-text{
@@ -406,8 +404,7 @@ header{
     font-size: 0.8rem;
   }
   .others-web{
-    min-height: 60vh;
-    transition: .55s;
+    min-height: 40vh;
   }
   .grid-item {
     background-color: #ccc;
