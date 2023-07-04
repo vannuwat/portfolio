@@ -163,7 +163,6 @@ header{
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
-  display: none;
 }
 .icons i{
   display: block;
@@ -368,9 +367,6 @@ header{
     height: 100%;
     place-content: center;
   }
-  .others-web{
-    min-height: 60vh;
-  }
 }
 @media (max-width: 500px){
   .hero-text{
@@ -403,9 +399,6 @@ header{
   }
   .hero-text p{
     font-size: 0.8rem;
-  }
-  .others-web{
-    min-height: 40vh;
   }
   .grid-item {
     background-color: #ccc;

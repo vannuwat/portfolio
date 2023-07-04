@@ -107,7 +107,7 @@ function App() {
             <button onClick={scrollToSkill}>Skills</button>
             <button onClick={scrollToWeb} className="ctaa"><i className="ri-play-fill"></i>My projects</button>
           </div>
-          <div className="hero-img"><img src="/design1.png" alt="profile_pic"></img></div>
+          <div className="hero-img-anime"><img src="/design1.png" alt="profile_pic"></img></div>
         </div>
         <div className="profile" id="profile"> 
           <div className="hero-text">
