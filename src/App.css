@@ -398,9 +398,6 @@ header{
   .hero-text p{
     font-size: 0.8rem;
   }
-  .others-web{
-    min-height: 40vh;
-  }
   .grid-item {
     background-color: #ccc;
     display: flex;
