@@ -112,7 +112,7 @@ function App() {
         <div className="profile" id="profile"> 
           <div className="hero-text">
             <h4>Profile</h4>
-            <p>I am a I am a fresh graduate at Sirindhorn International Institute of Technology, studying in the computer engineering program, and interested in the front-end developer role.
+            <p>I am a fresh graduate at Sirindhorn International Institute of Technology, studying in the computer engineering program, and interested in the front-end developer role.
             </p>
             <p>
               I am always seeking opportunities to practice myself. When I decide to do something, I will dedicate myself to it until the end.           
@@ -189,7 +189,7 @@ function App() {
           </div>
           <div className="grid-container-web">
             <div class="image-container">
-              <img src="/others_web.png" alt="league of legends"></img>
+              <img src="/others_web.PNG" alt="league of legends"></img>
               <div class="image-overlay">
                 <p>React, Tailwind css, video background, animation, and responsive web</p>
                 <a href="https://league-legend-demo-h17iy5sgk-vannuwat.vercel.app/" className="ctaa"><i className="ri-play-fill"></i>Visit Website</a>
