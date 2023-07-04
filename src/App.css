@@ -163,6 +163,7 @@ header{
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
+  display: none;
 }
 .icons i{
   display: block;
